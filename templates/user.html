@@ -66,7 +66,9 @@
     <div class="info">Presença nos treinos nos últimos três meses: {{ user['presenca_nos_treinos_tres_meses'] }}</div>
     <div class="info">Desconto recebido: {{ user['desconto_recebido'] }}</div>
     {% if message %}
-    <div class="message"><strong>{{ message }}</strong></div>
+      <div class="ia-message">
+        {{ message }}
+      </div>
     {% endif %}
     <form method="POST">
         <button type="submit" class="button">Simular Interação com a IA</button>
